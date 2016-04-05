@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Screencastacademy</title>
+  <title>Screencast Academy</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,30 +11,34 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-  
+
+  <!-- For icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#!" class="brand-logo">Screencast Academy</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="#"><i class="material-icons">list</i></a></li>
+        <li><a href="<%= pages_about_path %>"><i class="material-icons">contacts</i></a></li>
+        <li><a href="<%= pages_contact_path %>"><i class="material-icons">room</i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="#"><i class="material-icons">list</i></a></li>
+        <li><a href="<%= pages_about_path %>"><i class="material-icons">contacts</i></a></li>
+        <li><a href="<%= pages_contact_path %>"><i class="material-icons">room</i></a></li>
       </ul>
     </div>
   </nav>
 
-  <%= yield %>
+  <div class="row">
+    <div class="col m10 offset-m1">
+      <%= yield %>
+    </div>
+  </div>
 
   <script>
     $(".button-collapse").sideNav();
