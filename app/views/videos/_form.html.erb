@@ -11,19 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :screencast %><br>
-    <%= f.text_field :screencast %>
+  <div class="input-field">
+    <%= f.text_field :screencast, :placeholder => 'Link', :length => '50' %>
   </div>
-  <div class="field">
-    <%= f.label :desccription %><br>
-    <%= f.text_area :desccription %>
+  <div class="input-field">
+    <%= f.text_area :desccription, :placeholder => 'Description', :length => '800', :class => 'materialize-textarea' %>
   </div>
-  <div class="field">
-    <%= f.label :hashtag %><br>
-    <%= f.text_area :hashtag %>
+  <div class="input-field">
+    <%= f.text_field :hashtag, :placeholder => 'Tag', :length => '10' %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+  <a href="<%= videos_path %>" class="btn waves-effect waves-light" name="action">Back</a>
 <% end %>
