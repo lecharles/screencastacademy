@@ -1,1 +1,1 @@
-json.extract! @video, :id, :screencast, :desccription, :created_at, :updated_at
+json.extract! @video, :id, :screencast, :description, :created_at, :updated_at
