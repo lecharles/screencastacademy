@@ -22,3 +22,13 @@
  .row.z-depth-3 {
      padding: 1%;
  }
+
+/*navigation*/
+ nav {
+    background-color: #44b9d5;
+}
+
+/*footer*/
+footer.page-footer {
+    background-color: #44b9d5;
+}
