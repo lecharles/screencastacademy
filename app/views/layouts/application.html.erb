@@ -19,15 +19,15 @@
 
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Screencast Academy Alpha</a>
+      <%= link_to "Screencast Academy Alpha", root_path, :class => "brand-logo" %>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#"><i class="material-icons">view_list</i></a></li>
+        <li><a href="<%= root_path %>"><i class="material-icons">view_list</i></a></li>
         <li><a href="<%= pages_about_path %>"><i class="material-icons">contacts</i></a></li>
         <li><a href="<%= pages_contact_path %>"><i class="material-icons">room</i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="#"><i class="material-icons">view_list</i></a></li>
+        <li><a href="<%= root_path %>"><i class="material-icons">view_list</i></a></li>
         <li><a href="<%= pages_about_path %>"><i class="material-icons">contacts</i></a></li>
         <li><a href="<%= pages_contact_path %>"><i class="material-icons">room</i></a></li>
       </ul>
