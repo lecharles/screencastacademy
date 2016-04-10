@@ -6,8 +6,13 @@
 </p>
 
 <p>
+  <strong>Title:</strong>
+  <%= @video.title %>
+</p>
+
+<p>
   <strong>Desccription:</strong>
-  <%= @video.desccription %>
+  <%= @video.description %>
 </p>
 
 <%= link_to 'Edit', edit_video_path(@video) %> |
