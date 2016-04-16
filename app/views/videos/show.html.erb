@@ -12,7 +12,7 @@
 	<div class="col m9">
 		<div class="card blue-grey darken-1">
       <div class="card-image">
-        <div class="wistia_embed wistia_async_<%= @video.screencast %> 
+        <div class="wistia_embed wistia_async_<%= @video.screencast %>
          videoQuality=hd-only videoFoam=true" style="width:640px;height:360px;"></div>
       </div>
 
@@ -31,27 +31,6 @@
 </div>
 
 <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-
-
-<br>
-<br>
-
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Screencast:</strong>
-  <%= @video.screencast %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @video.title %>
-</p>
-
-<p>
-  <strong>Desccription:</strong>
-  <%= @video.description %>
-</p>
 
 <%= link_to 'Edit', edit_video_path(@video) %> |
 <%= link_to 'Back', videos_path %>
